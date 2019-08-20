@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+Enter value1  : <input type="number"	id="value1"><br>
+Guess value1  : <input type="number"	id="value2"><br>
+                <input type="button" value="submit" onclick="submit()">
+<p id="r">hi</p>
+</body>
+<script>
+	// var a = document.getElementById("value1").value;
+	function submit()
+	{
+	var a = document.getElementById("value1").value;
+	var b = document.getElementById("value2").value;
+	if(b==a){
+		document.getElementById("r").innerHTML="Right on!";
+            }
+    else{
+         document.getElementById("r").innerHTML="Unlucky :(";
+        }
+    }
+</script>
+</html>

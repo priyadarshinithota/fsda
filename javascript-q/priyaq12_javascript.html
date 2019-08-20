@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<input type="button" value="day and time" onclick="dayandtime()">
+	<p id="demo">hii</p>
+<script type="text/javaScript">
+	function dayandtime()
+	{
+		var today =new Date();
+		var day = today.getDay();
+		var listOfDays=["Sunday","Monday","Tuesday","Wednesday","Thursday","friday","Sunday"];
+		var hour = today.getHours();
+		var minute = today.getMinutes();
+		var seconds = today.getSeconds();
+		var ampm = (hour >= 12)?"PM":"AM";
+		hour = ( hour >= 12 )? (hour - 12):hour;
+		document.write("Today is :" + listOfDays[day] + ".");
+		document.write("Time is :"+hour +":"+minute+":"+seconds+""+ampm+".");
+        }
+</script>
+</body>
+</html>

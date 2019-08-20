@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type=text/javascript>
+		var n = prompt("enter a string");
+		Array.from(n);
+		var l = n.length;
+		document.write(n[0].toUpperCase());
+		for(i=1;i<l;i++)
+		{
+			if(n[i]==' '){
+				document.write(' ');
+		document.write(n[i+1].toUpperCase());
+	       i=i+1;
+	   }
+	else {
+		document.write(n[i]);
+	     }
+
+	    }
+    </script>
+</body>
+ </html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script>
+var n = prompt("enter a string");
+var l = n.length;
+var s = Array.from(n)
+var n1 = prompt("enter substring");
+var l1 = n1.length;
+var t = Array.from(n1);
+var i;
+var j,count=0;
+for(i=0,j=0;i<l1;i++,j++)
+{
+	
+	if(n[i]!=n1[j])
+	    break;
+	else
+	   count++;
+}
+	if(count==l1)
+	{
+		document.write("string starts with given substring");
+	}
+    else
+    {
+document.write("string does not starts with given substring");
+    }
+	</script>
+</body>
+</html>

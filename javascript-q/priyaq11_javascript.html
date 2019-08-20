@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script>
+var n = prompt("enter a string");
+var l = n.length;
+var s = Array.from(n)
+var n1 = prompt("enter substring");
+var l1 = n1.length;
+var t = Array.from(n1);
+var i;
+var count = 0;
+var flag = 0;
+var j;
+for(i=0;i<l;i++)
+{
+	for(j=0;j<l1;j++)
+	{
+	if(n[i]==n1[j])
+		var count++;
+	    break;
+	}
+	if(count==l1)
+	{
+		var flag++;
+	}
+
+}
+document.wirte("number of occurances of substring:"+flag);
+</script>
+</body>
