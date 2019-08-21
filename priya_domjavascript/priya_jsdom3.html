@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>highlight bold words</title>
+</head>
+<body>
+	<a href="www.google.com">Google</a><br>
+	<a href="www.amazon.com">amazon</a><br>
+	<a href="www.myntra.com">myntra</a><br>
+	<a href="www.ola.com">ola</a><br>
+	<a href="www.uber.com">uber</a><br>
+	<button onclick="getLast()">click</button>
+	<p id="r">hi</p>
+<script>
+	function getLast()
+	{
+		var b=document.getElementsByTagName("a");
+		var l = b.length;
+		var li=b[l-1].getAttribute("href");
+		document.getElementById("r").innerHTML=li;
+
+	}
+</script>
+</body>
+</html>
